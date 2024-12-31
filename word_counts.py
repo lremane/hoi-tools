@@ -1,7 +1,7 @@
 from collections import Counter
 import json
 
-file_path = "hico/hico_trainval_remake.odgt"
+file_path = "odgt/hanwha_QNF-8010_wallmount.odgt"
 
 with open(file_path, 'r', encoding='utf-8') as file:
     lines = file.readlines()

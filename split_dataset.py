@@ -31,7 +31,7 @@ def split_data(annotations: [str], dataset_name: str, interaction_name: str = No
 
 
 
-file_path = "hanwha_QNF-8010_wallmount.odgt"
+file_path = "odgt/hanwha_QNF-8010_wallmount.odgt"
 
 with open(file_path, 'r', encoding='utf-8') as file:
     lines = file.readlines()
