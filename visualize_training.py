@@ -2,7 +2,7 @@ import json
 import pandas as pd
 import matplotlib.pyplot as plt
 
-file_paths = ["/home/laurin/git/HoiTransformer/checkpoint/p_202412122010/log.txt"]
+file_paths = ["/home/laurin/Desktop/p_202501130722_overhead_new_server_b2_lr0002_success/log.txt"]
 
 for file_path in file_paths:
     with open(file_path, 'r', encoding='utf-8') as file:

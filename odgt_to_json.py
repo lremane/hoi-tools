@@ -4,8 +4,8 @@
 from misc.hico_classes import hico_classes_originID, hico_name2id
 import json
 
-odgt_path = "hico/hico_trainval_remake.odgt"
-json_path = "hico/eval/trainval_hico.json"
+odgt_path = "hico/hico_test_remake.odgt"
+json_path = "hico/eval/test_hico.json"
 
 with open(odgt_path, 'r', encoding='utf-8') as file:
     lines = file.readlines()

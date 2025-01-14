@@ -2,8 +2,8 @@ import json
 import pandas as pd
 import matplotlib.pyplot as plt
 
-file_path = "/home/laurin/git/HoiTransformer/checkpoint/p_202412122010/eval.txt"
-
+file_path = "/home/laurin/Desktop/p_202501130722_overhead_new_server_b2_lr0002_success/eval.txt"
+# file_path = "eval_batch_4.txt"
 with open(file_path, 'r', encoding='utf-8') as file:
     json_data = [json.loads(line) for line in file]
 
@@ -40,13 +40,13 @@ plt.show()
 # plt.show()
 
 # Plot trend for mAP for every single class
-for class_name, group in classes.groupby('class'):
-    plt.figure(figsize=(10, 6))
-    plt.plot(group['epoch'], group['ap'], label=class_name)
-    plt.xlabel('Epoch')
-    plt.ylabel('AP (Average Precision)')
-    plt.title(f'{class_name} AP Trends')
-    plt.legend(loc='upper left', bbox_to_anchor=(1.05, 1.0), borderaxespad=0.)
-    # plt.tight_layout(rect=(0.0, 0.0, 0.85, 1.0))
-    plt.grid()
-    plt.show()
+# for class_name, group in classes.groupby('class'):
+#     plt.figure(figsize=(10, 6))
+#     plt.plot(group['epoch'], group['ap'], label=class_name)
+#     plt.xlabel('Epoch')
+#     plt.ylabel('AP (Average Precision)')
+#     plt.title(f'{class_name} AP Trends')
+#     plt.legend(loc='upper left', bbox_to_anchor=(1.05, 1.0), borderaxespad=0.)
+#     # plt.tight_layout(rect=(0.0, 0.0, 0.85, 1.0))
+#     plt.grid()
+#     plt.show()

@@ -13,7 +13,7 @@ def rename_files_in_directory(directory, rename_to):
         os.rename(old_path, new_path)
         print(f"Renamed: {file} -> {new_name}")
 
-directory_path = "test2015"
-rename_to = 'test2015'
+directory_path = "hico_new/images/train2015"
+rename_to = 'train2015'
 # Call the function to rename the files
 rename_files_in_directory(directory_path, rename_to)

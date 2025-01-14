@@ -1,7 +1,7 @@
 from collections import Counter
 import json
 
-file_path = "odgt/hanwha_QNF-8010_wallmount.odgt"
+file_path = "/home/laurin/git/hoi-labeling/hq_v1_overhead_interactions_v2.odgt"
 
 with open(file_path, 'r', encoding='utf-8') as file:
     lines = file.readlines()
@@ -11,7 +11,7 @@ interactions = []
 hois = []
 for line in lines:
     data = json.loads(line)
-    print(data['file_name'])
+    #print(data['file_name'])
     gtboxes = data['gtboxes']
     for gtbox in gtboxes:
         obj = gtbox['tag']
@@ -29,6 +29,9 @@ for line in lines:
         object = gtboxes[object_id]['tag']
 
         hoi = f"{subject} {i} {object}"
+        if hoi == "person hold book":
+            print(data['file_name'])
+
         hois.append(hoi)
 
 # line = lines[334]
